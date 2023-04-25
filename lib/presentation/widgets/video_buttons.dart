@@ -1,3 +1,4 @@
+import 'package:app_videos/config/helpers/num_formats.dart';
 import 'package:app_videos/domain/entities/video_post.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,7 @@ class _IconButtonVideo extends StatelessWidget {
           color: color,
           onPressed: (){}, 
           icon: Icon(icon, size: 30,)),
-         Text('$value')
+         Text(NumFormats.readbleNumber(value.toDouble()))
       ],
     );
   }
