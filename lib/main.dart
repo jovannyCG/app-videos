@@ -1,4 +1,4 @@
-import 'package:app_videos/config/theme/app-theme.dart';
+import 'package:app_videos/config/theme/app_theme.dart';
 import 'package:app_videos/presentation/providers/discover_provider.dart';
 import 'package:app_videos/presentation/screens/discover/discover_screen.dart';
 import 'package:flutter/material.dart';
