@@ -1,3 +1,4 @@
+import 'package:app_videos/presentation/widgets/gradient_background.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -49,11 +50,12 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
             children: [
         
               VideoPlayer(controller),
-        
+        GradientBackground(stops: const[0.8, 1.0],),
               Positioned(
                 bottom: 50,
                 left: 20,
-                child: _VideoCaption(caption: widget.caption,))
+                child: _VideoCaption(caption: widget.caption,)),
+
             ],
           )
           ),
